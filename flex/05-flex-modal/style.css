@@ -20,6 +20,26 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
 }
 
 .icon {
@@ -33,6 +53,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon .text{
+  flex-direction: column;
+}
+
+.header{
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .close-button {
@@ -46,14 +79,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
   border: 1px solid #eee;
   padding: 0;
+}
+
+
+.text{
+  margin-bottom: 16px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.button-footer{
+  display: flex;
+  gap: 10px;
+
 }
 
 button.continue {
