@@ -24,22 +24,12 @@ body {
   padding: 16px;
   justify-content: center;
   align-items: center;
-  position: fixed;
 }
 
 .container{
   display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.modal-header{
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  
+  align-items: flex-start;
 }
 
 .icon {
@@ -56,19 +46,13 @@ body {
   flex-shrink: 0;
 }
 
-.icon .text{
-  flex-direction: column;
-}
-
 .header{
   font-weight: bold;
   font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-grow: 1;
 }
 
-.close-button {
+button.close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -79,26 +63,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
   border: 1px solid #eee;
   padding: 0;
+  margin-left: auto;
 }
 
-
-.text{
-  margin-bottom: 16px;
+.modal-footer{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 10px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
-}
-
-.button-footer{
-  display: flex;
-  gap: 10px;
-
 }
 
 button.continue {
