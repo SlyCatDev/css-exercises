@@ -22,6 +22,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display: flex;
   padding: 16px;
+  gap: 16px;
   justify-content: center;
   align-items: center;
 }
@@ -29,7 +30,6 @@ body {
 .container{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .icon {
@@ -44,15 +44,19 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-bottom: auto;
 }
 
 .header{
   font-weight: bold;
   font-size: 18px;
   flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-button.close-button {
+.close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -65,13 +69,15 @@ button.close-button {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
-  margin-left: auto;
+}
+
+.text{
+  margin-bottom: 16px;
 }
 
 .modal-footer{
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
   gap: 10px;
 }
 
